@@ -1,0 +1,97 @@
+body {
+    color: white;
+    background-color: rgb(27,31,36);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+main {
+    display: flex;
+    padding: 15px;
+    height: 80vh;
+}
+
+/* Navbar Styling */
+#navbar {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-color: yellow;
+}
+
+#navbar-heading {
+    padding-left: 20px;
+    flex-grow: 1;
+}
+
+#navbar-links {
+    padding-right: 20px;
+}
+
+#navbar-links > a {
+    padding: 10px;
+}
+
+.page-heading-accent {
+    color: yellow;
+}
+
+/* Contact Styling */
+#contact-me {
+    padding-top: 10px;
+    width: 40vw;
+}
+
+#personal-photo {
+    height: 50vh;
+}
+
+/* Main Content Styling */
+#main-content {
+    width: 60vw;
+    overflow: scroll;
+    height: 80vh;
+}
+
+.portfolio-section > h4 {
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-color: rgba(255, 255, 0, 0.5);
+}
+
+/* Project Section Styling */
+#section-Projects > .portfolio-children {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Skills Section Styling */
+#skill-list {
+    display: flex;
+}
+
+.skill-logo {
+    height: 80px;
+    width: auto;
+}
+
+/* Footer Styling */
+#footer {
+    height: 5vh;
+    border-style: solid;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top-color: rgb(255, 255, 0);
+}
