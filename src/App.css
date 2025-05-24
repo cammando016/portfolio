@@ -57,12 +57,12 @@ main {
     height: 80vh;
 }
 
-.portfolio-section > h4 {
+.portfolio-section > h3 {
     border-style: solid;
     border-top: 0;
-    border-left: 0;
+    border-bottom: 0;
     border-right: 0;
-    border-bottom-color: rgba(255, 255, 0, 0.5);
+    border-left-color: rgb(255, 255, 0);
 }
 
 /* Project Section Styling */
@@ -71,9 +71,14 @@ main {
     justify-content: space-around;
 }
 
+.project {
+    margin: 5px;
+}
+
 .project-card {
     display: flex;
     flex-direction: column;
+    flex-shrink: 1;
 }
 
 /* Skills Section Styling */

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Project ({ projectName, key }) {
+export default function Project ({ projectName, projectLink, projectContent }) {
     return (
         <div id={`project-${projectName}`} className="project">
             <div className="project-card">
@@ -11,7 +11,8 @@ export default function Project ({ projectName, key }) {
                     style={{height: '50px', width: 'auto'}}
                 />
                 <button>Project Overview</button>
-                <button>Visit Project</button>
+                <button><a href={projectLink} target="blank">Visit Project</a></button>
+                <p className="project-content">{projectContent}</p>
             </div>
         </div>
     )

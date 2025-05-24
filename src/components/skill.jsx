@@ -9,6 +9,7 @@ export default function Skill({ skillName, logoImgSrc }){
                 className="skill-logo"
                 id={`${skillName}-logo`}
             />
+            <p className="skill-label">{skillName}</p>
         </div>
     )
 }
