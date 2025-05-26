@@ -20,7 +20,7 @@ main {
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom-color: yellow;
+    border-bottom-color: rgb(246,217,87);
 }
 
 #navbar-heading {
@@ -37,7 +37,7 @@ main {
 }
 
 .page-heading-accent {
-    color: yellow;
+    color: rgb(246,217,87);
 }
 
 /* Contact Styling */
@@ -62,17 +62,19 @@ main {
     border-top: 0;
     border-bottom: 0;
     border-right: 0;
-    border-left-color: rgb(255, 255, 0);
+    border-left-color: rgb(246,217,87);
+    padding-left: 5px;
 }
 
 /* Project Section Styling */
-#section-Projects > .portfolio-children {
+#section-projects > .portfolio-children {
     display: flex;
     justify-content: space-around;
 }
 
 .project {
     margin: 5px;
+    display: flex;
 }
 
 .project-card {
@@ -98,5 +100,5 @@ main {
     border-bottom: 0;
     border-left: 0;
     border-right: 0;
-    border-top-color: rgb(255, 255, 0);
+    border-top-color: rgb(246,217,87);
 }

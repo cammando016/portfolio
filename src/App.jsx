@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import './App.css'
 //Component Imports
 import Navbar from './components/nav-bar'
@@ -10,6 +12,8 @@ import Footer from './components/footer'
 import { portfolioContent, projectContent, skillContent } from './data/portfolio-content'
 
 function App() {
+  const [activeOverview, setActiveOverview] = useState(projectContent[0].projectId);
+  const updateActiveOverview = (id) => setActiveOverview(id.replace(/[a-z]+-/i, ''));
 
   return (
     <>
@@ -22,8 +26,10 @@ function App() {
             portfolioContent.filter(section => section.basicSection).map(section => {
               return (
                 <PortfolioSection
+                  key={section.sectionName}
                   sectionName={section.sectionName}
                   sectionContent={section.content}
+                  activeProject={activeOverview} 
                 />
               )
             })
@@ -32,9 +38,17 @@ function App() {
           <PortfolioSection
             sectionName={portfolioContent[3].sectionName}
             sectionContent={portfolioContent[3].content}
+            activeProject={activeOverview} 
             children={
               projectContent.map(project => {
-                return <Project projectName={project.projectName} projectLink={project.projectLink} projectContent={project.projectOverview}/>;
+                return (
+                  <Project
+                    key={project.projectId} 
+                    project={project} 
+                    onClick={updateActiveOverview} 
+                    projectId={project.projectId}
+                  />
+                );
               })
             }
           />
@@ -42,12 +56,14 @@ function App() {
           <PortfolioSection
             sectionName={portfolioContent[4].sectionName}
             sectionContent={portfolioContent[4].content}
+            activeProject={activeOverview} 
             children={
               <div id="skill-list">
                 {
                   skillContent.map(skill => {
                     return (
-                      <Skill 
+                      <Skill
+                        key={skill.skillName}
                         skillName={skill.skillName}
                         logoImgSrc={skill.skillImage}
                       />
