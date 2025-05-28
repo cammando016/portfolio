@@ -1,4 +1,6 @@
 import React from "react";
+import { portfolioContent } from "../data/portfolio-content";
+import formatId from "../utils/format-id";
 
 export default function Navbar () {
     return (
@@ -7,12 +9,11 @@ export default function Navbar () {
                 <span className="page-heading-accent">{`<>`}</span> Developer Portfolio <span className="page-heading-accent">{`</>`}</span>
             </h4>
             <nav id="navbar-links">
-                <a>Introduction</a>
-                <a>About</a>
-                <a>Education</a>
-                <a>Projects</a>
-                <a>Skills</a>
-                <a>Contact</a>
+                {
+                    portfolioContent.map(section => {
+                        return <a href={`#section-${formatId(section.sectionName)}`} key={section.sectionId}>{section.sectionName}</a>
+                    })
+                }
             </nav>
         </div>
     )
