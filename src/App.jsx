@@ -31,6 +31,48 @@ function App() {
     }
   };
 
+  function generateChildContent(sectionName) {
+    let childContent = '';
+
+    switch (sectionName) {
+      case 'Projects':
+        childContent = (
+          projectContent.map(project => {
+              return (
+                <Project
+                  key={project.projectId} 
+                  project={project} 
+                  onClick={updateActiveOverview} 
+                  projectId={project.projectId}
+                />
+              );
+            }))
+        break;
+
+      case 'Skills':
+        childContent = (
+          <div id='skill-list'>
+            {
+              skillContent.map(skill => {
+                return (
+                  <Skill
+                    key={skill.skillName}
+                    skillName={skill.skillName}
+                    logoImgSrc={skill.skillImage}
+                  />
+                )
+              })
+            }
+          </div>
+        );
+        break;
+      default:
+        childContent = null;
+    }
+
+    return childContent;
+  }
+
   return (
     <>
       <Navbar/>
@@ -39,57 +81,18 @@ function App() {
         <ContactMe/>
         <div id="main-content">
           {
-            portfolioContent.filter(section => section.basicSection).map(section => {
+            portfolioContent.map(section => {
               return (
                 <PortfolioSection
-                  key={section.sectionName}
+                  key={section.sectionId}
                   sectionName={section.sectionName}
                   sectionContent={section.content}
                   activeProject={activeOverview} 
+                  children={generateChildContent(section.sectionName)}
                 />
               )
             })
           }
-
-          <PortfolioSection
-            sectionName={portfolioContent[3].sectionName}
-            sectionContent={portfolioContent[3].content}
-            activeProject={activeOverview} 
-            children={
-              projectContent.map(project => {
-                return (
-                  <Project
-                    key={project.projectId} 
-                    project={project} 
-                    onClick={updateActiveOverview} 
-                    projectId={project.projectId}
-                  />
-                );
-              })
-            }
-          />
-
-          <PortfolioSection
-            sectionName={portfolioContent[4].sectionName}
-            sectionContent={portfolioContent[4].content}
-            activeProject={activeOverview} 
-            children={
-              <div id="skill-list">
-                {
-                  skillContent.map(skill => {
-                    return (
-                      <Skill
-                        key={skill.skillName}
-                        skillName={skill.skillName}
-                        logoImgSrc={skill.skillImage}
-                      />
-                    )
-                  })
-                }
-              </div>
-            }
-          />
-
         </div>
       </main>
 
