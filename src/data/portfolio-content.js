@@ -70,7 +70,20 @@ const upcomingProjects = [
         projectOverview: `Having completed other personal projects, I was able to identify an opportunity to apply programming skills in the workplace, so I am currently working to automate manual processes in my current role as a Manager. I am writing JavaScript functions in Google Sheets that take in weekly roster data and processes this data to automate several tasks that were previously completed manually, allowing managers to spend time focusing on more productive work. It has been very rewarding identifying and implementing a programming solution in a professional environment, which felt like a step up from the volume control project which I was brought into.`,
         projectLink: ''
     },
-
+    {
+        projectId: '',
+        projectName: '',
+        projectImage: '',
+        projectOverview: '',
+        projectLink: ''
+    },
+    {
+        projectId: '',
+        projectName: '',
+        projectImage: '',
+        projectOverview: '',
+        projectLink: ''
+    }
 ]
 
 const skillContent = [
@@ -111,4 +124,4 @@ const skillContent = [
     }
 ]
 
-export { portfolioContent, projectContent, skillContent }
+export { portfolioContent, projectContent, upcomingProjects, skillContent }

@@ -1,4 +1,5 @@
 import React from "react";
+import formatId from "../utils/format-id";
 
 export default function ContactMe() {
     return (
@@ -10,12 +11,12 @@ export default function ContactMe() {
                 id="personal-photo"
             />
             <div id="contact-download-links">
-                <button>Placeholder Result</button>
-                <button>Placeholder Cover Letter</button>
+                <a href="/c-anderson-resume-2025.pdf" download="C-Anderson-Resume"><button className="download-file" id="resume-download">Download Resume</button></a>
+                <a href="/c-anderson-cover-2025.pdf" download="C-Anderson-Cover-Letter"><button className="download-file" id="cover-letter-download">Download Cover Letter</button></a>
             </div>
             <div id="contact-follow-links">
-                <a>Github</a>
-                <a>LinkedIn</a>
+                <a href="https://github.com/cammando016" target="blank"><img alt="Github Logo" className="social-link" src="/github-logo.png" /></a>
+                <a href="https://www.linkedin.com/in/cameron-anderson-6b3078209/" target="blank"><img alt="LinkedIn Logo" className="social-link" src="/linkedin-logo.png" /></a>
             </div>
             <div id="make-contact">
                 <h4>Contact Me:</h4>

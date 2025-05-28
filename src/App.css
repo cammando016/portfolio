@@ -51,6 +51,11 @@ main {
     border-radius: 50%;
 }
 
+.social-link {
+    height: 100px;
+    width: auto;
+}
+
 /* Main Content Styling */
 #main-content {
     width: 60vw;
