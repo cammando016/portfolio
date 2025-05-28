@@ -41,21 +41,21 @@ const projectContent = [
     {
         projectId: 'res001',
         projectName: 'Resume',
-        projectImage: '',
+        projectImage: '/resume-photo.png',
         projectOverview: `My first project after learning React was to create a web version of my resume. Completing this allowed me to practice breaking down content into reusable components and passing data between components. I also added a panel to generate a random sport gif based on a user's selected sport. I did this in order to practice collecting user input and customising page content based on this, and to collect external data which I had not previously attempted.`,
         projectLink: ''
     },
     {
         projectId: 'nba001',
         projectName: 'NBA Team Guesser',
-        projectImage: '',
+        projectImage: '/team-guesser-photo.png',
         projectOverview: `My most in depth project completed to date was to build a guessing game where user's are shown an NBA player headshot and guess the team they play for. This project involved a lot of problem solving and learning as I went, I regularly encountered times where I needed to refactor code to allow for the game to function or be able to pass prop data between several components. I used AI assistance to increase functionality, including writing a script to fetch NBA player headshots and match them to the player data I was already fetching, and increasing user friendliness such as an autocomplete in the team guessing field. Once I had completed the main game logic, I then added game mode and mode setting customisation to further increase user flexibility.`,
         projectLink: 'https://nbateamguesser.netlify.app'
     },
     {
         projectId: 'vol001',
         projectName: 'Volume Control',
-        projectImage: '',
+        projectImage: '/m5stack.jpg',
         projectOverview: `I wrote a python script that subscribed to and published MQTT messages via AWS. The script received a message from the end user device with a cinema number and volume command for up or down. A parsed config file specified the audio appliance for each cinema, and then the script generates a TCP message to send to the appliance and change volume. Once adjusted, the appliance responds with the new volume and the script publishes this as an MQTT message back to the end user device. As I had never used python before, I had to rely on general programming skills for a new language, which was a good test for applying skills from university to a real project. I found it extremely rewarding pushing through each of the various roadblocks that arose and having an opportunity to use the concepts I had studied in a professional context.`,
         projectLink: ''
     }
@@ -66,7 +66,7 @@ const upcomingProjects = [
     {
         projectId: 'goo001',
         projectName: 'Google Sheets',
-        projectImage: '',
+        projectImage: 'https://cdn1.vectorstock.com/i/1000x1000/84/80/people-silhouette-icon-or-anonymous-person-vector-45238480.jpg',
         projectOverview: `Having completed other personal projects, I was able to identify an opportunity to apply programming skills in the workplace, so I am currently working to automate manual processes in my current role as a Manager. I am writing JavaScript functions in Google Sheets that take in weekly roster data and processes this data to automate several tasks that were previously completed manually, allowing managers to spend time focusing on more productive work. It has been very rewarding identifying and implementing a programming solution in a professional environment, which felt like a step up from the volume control project which I was brought into.`,
         projectLink: ''
     },

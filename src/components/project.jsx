@@ -11,10 +11,10 @@ export default function Project ({ project, onClick, projectId }) {
             <div id={`project-${formatId(projectId)}`} className="project">
                 <div className="project-card">
                     <h4>{project.projectName}</h4>
-                    <img 
-                        src="https://cdn1.vectorstock.com/i/1000x1000/84/80/people-silhouette-icon-or-anonymous-person-vector-45238480.jpg"
-                        alt='Project Photo'
-                        style={{height: '50px', width: 'auto'}}
+                    <img
+                        className="project-image" 
+                        src={project.projectImage}
+                        alt="Project Photo"
                     />
                     <div id="project-buttons">
                         <button onClick={handleClick} id={`button-${projectId}`}>Toggle Project Overview</button>

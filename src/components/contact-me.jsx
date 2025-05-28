@@ -5,7 +5,7 @@ export default function ContactMe() {
         <div id="contact-me">
             <h1><em>Hi, I'm Cam</em></h1>
             <img 
-                src="https://cdn1.vectorstock.com/i/1000x1000/84/80/people-silhouette-icon-or-anonymous-person-vector-45238480.jpg"
+                src="/profile-picture.jpeg"
                 alt="photo of me"
                 id="personal-photo"
             />

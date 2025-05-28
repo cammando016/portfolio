@@ -48,6 +48,7 @@ main {
 
 #personal-photo {
     height: 50vh;
+    border-radius: 50%;
 }
 
 /* Main Content Styling */
@@ -89,6 +90,12 @@ main {
     border-left: 0;
     border-right: 0;
     border-bottom-color: rgb(246,217,87);
+}
+
+.project-image {
+    width: auto;
+    height: 15vh;
+    flex-grow: 1;
 }
 
 /* Skills Section Styling */
