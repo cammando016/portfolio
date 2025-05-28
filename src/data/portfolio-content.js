@@ -79,32 +79,39 @@ const projectContent = [
 
 const skillContent = [
     {
+        skillId: 'sk001',
         skillName: 'HTML',
         skillImage: '/html-logo.svg'
     },
     {
+        skillId: 'sk002',
         skillName: 'CSS',
         skillImage: '/css-logo.svg'
     },
     {
+        skillId: 'sk003',
         skillName: 'JavaScript',
         skillImage: '/js-logo.png'
     },
     {
+        skillId: 'sk004',
         skillName: 'React',
-        skillImage: '/js-logo.png'
+        skillImage: '/react-logo.png'
     },
     {
+        skillId: 'sk005',
         skillName: 'SQL',
-        skillImage: '/js-logo.png'
+        skillImage: '/sql-logo.png'
     },
     {
+        skillId: 'sk006',
         skillName: 'C#',
-        skillImage: '/js-logo.png'
+        skillImage: '/csharp-logo.png'
     },
     {
+        skillId: 'sk007',
         skillName: 'Python',
-        skillImage: '/js-logo.png'
+        skillImage: '/python-logo.png'
     }
 ]
 
