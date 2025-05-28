@@ -65,16 +65,16 @@ const projectContent = [
             I had to rely on general programming skills for a new language, which was a good test for applying skills from university to a real project. 
             I found it extremely rewarding pushing through each of the various roadblocks that arose and having an opportunity to use the concepts I had studied in a professional context.`,
         projectLink: ''
-    },
-    {
-        projectId: 'goo001',
-        projectName: 'Google Sheets',
-        projectImage: '',
-        projectOverview: `Having completed other personal projects, my confidence has grown in applying programming skills and I was able to identify an opportunity to automate manual processes in my current role as a Manager.
-            I wrote a JavaScript function in Google Sheets that takes in weekly roster data and processes this data to automate several tasks that were previously completed manually, allowing managers to spend time focusing on more productive work.
-            I found it very rewarding identifying and implementing a solution to this opportunity myself in a professional environment, which felt like a step up from the volume control project which I was brought into.`,
-        projectLink: ''
     }
+    // {
+    //     projectId: 'goo001',
+    //     projectName: 'Google Sheets',
+    //     projectImage: '',
+    //     projectOverview: `Having completed other personal projects, my confidence has grown in applying programming skills and I was able to identify an opportunity to automate manual processes in my current role as a Manager.
+    //         I wrote a JavaScript function in Google Sheets that takes in weekly roster data and processes this data to automate several tasks that were previously completed manually, allowing managers to spend time focusing on more productive work.
+    //         I found it very rewarding identifying and implementing a solution to this opportunity myself in a professional environment, which felt like a step up from the volume control project which I was brought into.`,
+    //     projectLink: ''
+    // }
 ];
 
 const skillContent = [

@@ -12,8 +12,24 @@ import Footer from './components/footer'
 import { portfolioContent, projectContent, skillContent } from './data/portfolio-content'
 
 function App() {
-  const [activeOverview, setActiveOverview] = useState(projectContent[0].projectId);
-  const updateActiveOverview = (id) => setActiveOverview(id.replace(/[a-z]+-/i, ''));
+  const [activeOverview, setActiveOverview] = useState(null);
+  const updateActiveOverview = (id) => {
+    let clickedProjId = id.replace(/[a-z]+-/i, '');
+    let oldProjId = activeOverview;
+    
+    if(activeOverview === null) {
+      setActiveOverview(clickedProjId);
+      document.querySelector(`#project-${clickedProjId}`).classList.toggle('active-project');
+    }
+    else if (activeOverview !== clickedProjId) {
+      document.querySelector(`#project-${oldProjId}`).classList.toggle('active-project');
+      setActiveOverview(clickedProjId);
+      document.querySelector(`#project-${clickedProjId}`).classList.toggle('active-project');
+    } else {
+      setActiveOverview(null)
+      document.querySelector(`#project-${clickedProjId}`).classList.toggle('active-project');
+    }
+  };
 
   return (
     <>

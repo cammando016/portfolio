@@ -8,7 +8,7 @@ export default function Project ({ project, onClick, projectId }) {
     
     return (
         <>
-            <div id={`project-${formatId(project.projectName)}`} className="project">
+            <div id={`project-${formatId(projectId)}`} className="project">
                 <div className="project-card">
                     <h4>{project.projectName}</h4>
                     <img 
@@ -17,7 +17,7 @@ export default function Project ({ project, onClick, projectId }) {
                         style={{height: '50px', width: 'auto'}}
                     />
                     <div id="project-buttons">
-                        <button onClick={handleClick} id={`button-${projectId}`}>Project Overview</button>
+                        <button onClick={handleClick} id={`button-${projectId}`}>Toggle Project Overview</button>
                         <button><a href={project.projectLink} target="blank">Visit Project</a></button>
                     </div>
                 </div>
