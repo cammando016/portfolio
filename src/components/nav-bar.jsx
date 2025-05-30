@@ -5,9 +5,9 @@ import formatId from "../utils/format-id";
 export default function Navbar () {
     return (
         <div id="navbar">
-            <h4 id="navbar-heading">
+            <h2 id="navbar-heading">
                 <span className="page-heading-accent">{`<>`}</span> Developer Portfolio <span className="page-heading-accent">{`</>`}</span>
-            </h4>
+            </h2>
             <nav id="navbar-links">
                 {
                     portfolioContent.map(section => {

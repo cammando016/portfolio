@@ -9,7 +9,7 @@ import Project from './components/project'
 import Skill from './components/skill'
 import Footer from './components/footer'
 //Data Imports
-import { portfolioContent, projectContent, skillContent } from './data/portfolio-content'
+import { portfolioContent, projectContent, skillContent, upcomingProjects } from './data/portfolio-content'
 
 function App() {
   const [activeOverview, setActiveOverview] = useState(null);
@@ -47,6 +47,20 @@ function App() {
                 />
               );
             }))
+        break;
+
+      case 'Upcoming Projects':
+        childContent = (
+          upcomingProjects.map(project => {
+            return (
+              <Project
+                key={project.projectId}
+                project={project}
+                onClick={updateActiveOverview}
+                projectId={project.projectId}
+              />
+            );
+          }))
         break;
 
       case 'Skills':

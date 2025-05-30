@@ -69,21 +69,21 @@ const upcomingProjects = [
         projectImage: 'https://cdn1.vectorstock.com/i/1000x1000/84/80/people-silhouette-icon-or-anonymous-person-vector-45238480.jpg',
         projectOverview: `Having completed other personal projects, I was able to identify an opportunity to apply programming skills in the workplace, so I am currently working to automate manual processes in my current role as a Manager. I am writing JavaScript functions in Google Sheets that take in weekly roster data and processes this data to automate several tasks that were previously completed manually, allowing managers to spend time focusing on more productive work. It has been very rewarding identifying and implementing a programming solution in a professional environment, which felt like a step up from the volume control project which I was brought into.`,
         projectLink: ''
-    },
-    {
-        projectId: '',
-        projectName: '',
-        projectImage: '',
-        projectOverview: '',
-        projectLink: ''
-    },
-    {
-        projectId: '',
-        projectName: '',
-        projectImage: '',
-        projectOverview: '',
-        projectLink: ''
     }
+    // {
+    //     projectId: '',
+    //     projectName: '',
+    //     projectImage: '',
+    //     projectOverview: '',
+    //     projectLink: ''
+    // },
+    // {
+    //     projectId: '',
+    //     projectName: '',
+    //     projectImage: '',
+    //     projectOverview: '',
+    //     projectLink: ''
+    // }
 ]
 
 const skillContent = [

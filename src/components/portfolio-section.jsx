@@ -1,5 +1,5 @@
 import React from "react";
-import { projectContent } from "../data/portfolio-content";
+import { projectContent, upcomingProjects } from "../data/portfolio-content";
 import formatId from "../utils/format-id";
 
 export default function PortfolioSection ({ sectionName, sectionContent, activeProject, children }) {
@@ -24,6 +24,18 @@ export default function PortfolioSection ({ sectionName, sectionContent, activeP
                     <div id='project-overviews'>
                         {
                             projectContent.filter(project => activeProject === project.projectId).map(project => {
+                                return (<p key={project.projectId} id={`project-${formatId(project.projectName)}-content`} className="project-content">{project.projectOverview}</p>)
+                            })
+                        }
+                    </div>
+                )
+            }
+
+            {
+                sectionName === 'Upcoming Projects' && (
+                    <div id="upcoming-project-overviews">
+                        {
+                            upcomingProjects.filter(project => activeProject === project.projectId).map(project => {
                                 return (<p key={project.projectId} id={`project-${formatId(project.projectName)}-content`} className="project-content">{project.projectOverview}</p>)
                             })
                         }
