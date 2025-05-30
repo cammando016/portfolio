@@ -9,7 +9,7 @@ export default function PortfolioSection ({ sectionName, sectionContent, activeP
             <h3 className="section-heading">{sectionName}</h3>
 
             <div id={`content-${formatId(sectionName)}`} className="portfolio-section-content">
-                <p>
+                <p className="section-content-description">
                     {
                         sectionContent.split('\n').map((line, index) => (
                             <Fragment key={index}> {line} <br /> <br /> </Fragment>

@@ -20,7 +20,7 @@ const portfolioContent = [
     {
         sectionId: 'upc001',
         sectionName: 'Upcoming Projects',
-        content: `Section Content`,
+        content: `I am currently working on 2 more projects, one within my management role and another personal project. For both projects I am endeavouring to use new techniques and more efficient coding practices. Please note that as I am actively working on these projects, functionality may not be complete but I hope they are an interesting insight into what I am working on next.`,
         basicSection: false
     },
     {
@@ -69,14 +69,14 @@ const upcomingProjects = [
         projectImage: '/google-sheets-photo.png',
         projectOverview: `Having completed other personal projects, I was able to identify an opportunity to apply programming skills in the workplace, so I am currently working to automate manual processes in my current role as a Manager. I am writing JavaScript functions in Google Sheets that take in weekly roster data and processes this data to automate several tasks that were previously completed manually, allowing managers to spend time focusing on more productive work. It has been very rewarding identifying and implementing a programming solution in a professional environment, which felt like a step up from the volume control project which I was brought into.`,
         projectLink: 'https://docs.google.com/spreadsheets/d/1j8VK6vnDJ4QuzgJRPoZEBUOsTEJEXYZu81jCM2laSco/edit?gid=128938579#gid=128938579'
+    },
+    {
+        projectId: 'gym001',
+        projectName: 'Gym Tracker',
+        projectImage: '/gym-tracker.jpeg',
+        projectOverview: 'Now that I have become more confident coding in React, I have begun learning Next.js to take advantage of the additional functionality included. My first project using Next.js will be creating a gym progress tracking site, that I can customise for my personal preference on keeping tracking of sets and ongoing progress each time I go to the gym. My goal for this project, as my existing react projects have been single page sites, is that the gym tracker will be a multi-page website in React with Next.js, as well as connecting to and continually updating a database.',
+        projectLink: ''
     }
-    // {
-    //     projectId: '',
-    //     projectName: '',
-    //     projectImage: '',
-    //     projectOverview: '',
-    //     projectLink: ''
-    // }
 ]
 
 const skillContent = [

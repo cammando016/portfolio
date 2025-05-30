@@ -10,7 +10,7 @@ export default function Project ({ project, onClick, projectId }) {
         <>
             <div id={`project-${formatId(projectId)}`} className="project">
                 <div className="project-card">
-                    <h4>{project.projectName}</h4>
+                    <h4 className="project-name">{project.projectName}</h4>
                     <img
                         className="project-image" 
                         src={project.projectImage}
@@ -18,7 +18,9 @@ export default function Project ({ project, onClick, projectId }) {
                     />
                     <div id="project-buttons">
                         <button onClick={handleClick} id={`button-${projectId}`}>Toggle Project Overview</button>
-                        <button><a href={project.projectLink} target="blank">Visit Project</a></button>
+                        {
+                            project.projectLink !== "" && <button><a href={project.projectLink} target="blank">Visit Project</a></button>
+                        }
                     </div>
                 </div>
                 

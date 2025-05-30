@@ -73,8 +73,12 @@ main {
     padding-left: 5px;
 }
 
+.section-content-description {
+    margin: 0;
+}
+
 /* Project Section Styling */
-#section-projects > .portfolio-children {
+#section-projects > .portfolio-children, #section-upcoming-projects > .portfolio-children {
     display: flex;
     justify-content: space-around;
 }
@@ -88,6 +92,10 @@ main {
     display: flex;
     flex-direction: column;
     flex-shrink: 1;
+}
+
+.project-name {
+    margin-top: 0;
 }
 
 .active-project {
