@@ -96,6 +96,13 @@ main {
 
 .project-name {
     margin-top: 0;
+    align-items: center;
+}
+
+.icon-img {
+    width: 30px;
+    height: auto;
+    padding-right: 20px;
 }
 
 .active-project {

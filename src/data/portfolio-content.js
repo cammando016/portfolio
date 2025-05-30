@@ -43,21 +43,24 @@ const projectContent = [
         projectName: 'Resume',
         projectImage: '/resume-photo.png',
         projectOverview: `My first project after learning React was to create a web version of my resume. Completing this allowed me to practice breaking down content into reusable components and passing data between components. I also added a panel to generate a random sport gif based on a user's selected sport. I did this in order to practice collecting user input and customising page content based on this, and to collect external data which I had not previously attempted.`,
-        projectLink: ''
+        projectLink: '',
+        projectLangImg: '/react-logo.png'
     },
     {
         projectId: 'nba001',
         projectName: 'NBA Team Guesser',
         projectImage: '/team-guesser-photo.png',
         projectOverview: `My most in depth project completed to date was to build a guessing game where user's are shown an NBA player headshot and guess the team they play for. This project involved a lot of problem solving and learning as I went, I regularly encountered times where I needed to refactor code to allow for the game to function or be able to pass prop data between several components. I used AI assistance to increase functionality, including writing a script to fetch NBA player headshots and match them to the player data I was already fetching, and increasing user friendliness such as an autocomplete in the team guessing field. Once I had completed the main game logic, I then added game mode and mode setting customisation to further increase user flexibility.`,
-        projectLink: 'https://nbateamguesser.netlify.app'
+        projectLink: 'https://nbateamguesser.netlify.app',
+        projectLangImg: '/react-logo.png'
     },
     {
         projectId: 'vol001',
         projectName: 'Volume Control',
         projectImage: '/m5stack.jpg',
         projectOverview: `I wrote a python script that subscribed to and published MQTT messages via AWS. The script received a message from the end user device with a cinema number and volume command for up or down. A parsed config file specified the audio appliance for each cinema, and then the script generates a TCP message to send to the appliance and change volume. Once adjusted, the appliance responds with the new volume and the script publishes this as an MQTT message back to the end user device. As I had never used python before, I had to rely on general programming skills for a new language, which was a good test for applying skills from university to a real project. I found it extremely rewarding pushing through each of the various roadblocks that arose and having an opportunity to use the concepts I had studied in a professional context.`,
-        projectLink: ''
+        projectLink: '',
+        projectLangImg: '/python-logo.png'
     }
     // 
 ];
@@ -68,14 +71,16 @@ const upcomingProjects = [
         projectName: 'Roster Scripting',
         projectImage: '/google-sheets-photo.png',
         projectOverview: `Having completed other personal projects, I was able to identify an opportunity to apply programming skills in the workplace, so I am currently working to automate manual processes in my current role as a Manager. I am writing JavaScript functions in Google Sheets that take in weekly roster data and processes this data to automate several tasks that were previously completed manually, allowing managers to spend time focusing on more productive work. It has been very rewarding identifying and implementing a programming solution in a professional environment, which felt like a step up from the volume control project which I was brought into.`,
-        projectLink: 'https://docs.google.com/spreadsheets/d/1j8VK6vnDJ4QuzgJRPoZEBUOsTEJEXYZu81jCM2laSco/edit?gid=128938579#gid=128938579'
+        projectLink: 'https://docs.google.com/spreadsheets/d/1j8VK6vnDJ4QuzgJRPoZEBUOsTEJEXYZu81jCM2laSco/edit?gid=128938579#gid=128938579',
+        projectLangImg: '/js-logo.png'
     },
     {
         projectId: 'gym001',
         projectName: 'Gym Tracker',
         projectImage: '/gym-tracker.jpeg',
         projectOverview: 'Now that I have become more confident coding in React, I have begun learning Next.js to take advantage of the additional functionality included. My first project using Next.js will be creating a gym progress tracking site, that I can customise for my personal preference on keeping tracking of sets and ongoing progress each time I go to the gym. My goal for this project, as my existing react projects have been single page sites, is that the gym tracker will be a multi-page website in React with Next.js, as well as connecting to and continually updating a database.',
-        projectLink: ''
+        projectLink: '',
+        projectLangImg: '/nextjs-logo.png'
     }
 ]
 

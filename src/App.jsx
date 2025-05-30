@@ -57,7 +57,6 @@ function App() {
                 key={project.projectId}
                 project={project}
                 onClick={updateActiveOverview}
-                projectId={project.projectId}
               />
             );
           }))
