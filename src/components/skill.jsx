@@ -1,15 +1,14 @@
 import React from "react";
 
-export default function Skill({ skillName, logoImgSrc }){
+export default function Skill({ skill }){
     return (
-        <div id={`skill-${skillName}`} className="skill-display">
+        <div id={`skill-${skill.skillName}`} className="skill-display">
             <img 
-                src={logoImgSrc}
-                alt={`${skillName} Logo`}
+                src={skill.skillImage}
+                alt={`${skill.skillName} Logo`}
                 className="skill-logo"
-                id={`${skillName}-logo`}
+                id={`${skill.skillName}-logo`}
             />
-            <p className="skill-label">{skillName}</p>
         </div>
     )
 }

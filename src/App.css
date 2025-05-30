@@ -113,14 +113,40 @@ main {
 }
 
 /* Skills Section Styling */
-#skill-list {
+#skill-carousel {
     display: flex;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.skill-list {
+    display: flex;
+    will-change: transform;
+    animation: scrolling 10s linear infinite;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+#content-skills {
+    display: none;
+}
+
+.skill-display {
+    padding: 0 20px;
 }
 
 .skill-logo {
     height: 80px;
     width: auto;
 }
+
 
 /* Footer Styling */
 #footer {

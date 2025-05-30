@@ -65,19 +65,32 @@ function App() {
 
       case 'Skills':
         childContent = (
-          <div id='skill-list'>
+          <div id='skill-carousel'>
+            <div className='skill-list'>
+              {
+                skillContent.map(skill => {
+                  return (
+                    <Skill
+                      key={skill.skillName}
+                      skill={skill}
+                    />
+                  )
+                })
+              }
+            </div>
+            <div className='skill-list' aria-hidden>
             {
               skillContent.map(skill => {
                 return (
                   <Skill
                     key={skill.skillName}
-                    skillName={skill.skillName}
-                    logoImgSrc={skill.skillImage}
+                    skill={skill}
                   />
                 )
               })
             }
           </div>
+        </div>
         );
         break;
       default:

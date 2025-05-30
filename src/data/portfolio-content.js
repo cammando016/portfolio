@@ -20,7 +20,7 @@ const portfolioContent = [
     {
         sectionId: 'upc001',
         sectionName: 'Upcoming Projects',
-        content: `I am currently working on 2 more projects, one within my management role and another personal project. For both projects I am endeavouring to use new techniques and more efficient coding practices. Please note that as I am actively working on these projects, functionality may not be complete but I hope they are an interesting insight into what I am working on next.`,
+        content: `I am currently working on 2 more projects, one within my management role and another personal project. For both projects I am endeavouring to use new techniques and more efficient coding practices. Please note that as I am actively working on these projects, not all functionality is complete but I hope they are an interesting insight into what I am working on next.`,
         basicSection: false
     },
     {
