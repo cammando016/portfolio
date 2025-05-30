@@ -3,6 +3,7 @@ body {
     background-color: rgb(27,31,36);
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
+    line-height: 1.4;
 }
 
 main {

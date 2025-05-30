@@ -1,4 +1,5 @@
 import React from "react";
+import { Fragment } from "react";
 import { projectContent, upcomingProjects } from "../data/portfolio-content";
 import formatId from "../utils/format-id";
 
@@ -8,7 +9,13 @@ export default function PortfolioSection ({ sectionName, sectionContent, activeP
             <h3 className="section-heading">{sectionName}</h3>
 
             <div id={`content-${formatId(sectionName)}`} className="portfolio-section-content">
-                <p>{sectionContent}</p>
+                <p>
+                    {
+                        sectionContent.split('\n').map((line, index) => (
+                            <Fragment key={index}> {line} <br /> <br /> </Fragment>
+                        )
+                    )}
+                </p>
             </div>
 
             {

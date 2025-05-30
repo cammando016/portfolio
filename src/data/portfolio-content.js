@@ -2,13 +2,13 @@ const portfolioContent = [
     {
         sectionId: 'int001',
         sectionName: 'Introduction',
-        content: `I am a software developer, looking for an opportunity to continue my IT career. I have 1 year of experience in IT roles, including development work which I thoroughly enjoyed and am interested in pursuing as my career. I am seeking an opportunity with an organisation where I can commit to long-term professional development and progression, and hoping for a role that involves meaningful work with a positive impact. My IT experience includes a 6 month graduate program with Halo Service Solutions, this involved a mix of responsibilities including software support, product consultancy and SQL report writing. Due to strong technical skills shown in my role as a manager at Village Cinemas, in 2024 I was offered a fixed term developer secondment within the projection support department. During this secondment I was tasked with building a python script run on through a small user interface on an M5Stack device to send and receive MQTT messages via AWS to each cinema's sound system for external volume control.`,
+        content: `I am a software developer, looking for an opportunity to continue my IT career. I have 1 year of experience in IT roles, including development work which I thoroughly enjoyed and am interested in pursuing as my career. I am seeking an opportunity with an organisation where I can commit to long-term professional development and progression, and hoping for a role that involves meaningful work with a positive impact.\nMy IT experience includes a 6 month graduate program with Halo Service Solutions, this involved a mix of responsibilities including software support, product consultancy and SQL report writing.\nDue to strong technical skills shown in my role as a manager at Village Cinemas, in 2024 I was offered a fixed term developer secondment within the projection support department. During this secondment I was tasked with building a python script run on through a small user interface on an M5Stack device to send and receive MQTT messages via AWS to each cinema's sound system for external volume control.`,
         basicSection: true
     },
     {
         sectionId: 'abo001',
         sectionName: 'About Me',
-        content: `I am an avid sports fan, particularly of AFL and the NBA, however I enjoy watching almost all sports except soccer. I go snowboarding every winter and have been able to travel to Japan twice to snowboard, with my next hopeful destination being Whistler Blackcomb in Canada. I have played the flute for 15 years and am currently teaching myself to play the saxophone for a new challenge, and I enjoy software development due to the mix of problem solving and creativity required, which I find very engaging.`,
+        content: `I am an avid sports fan, particularly of AFL and the NBA, however I enjoy watching almost all sports except soccer. I go snowboarding every winter and have been able to travel to Japan twice to snowboard, with my next hopeful destination being Whistler Blackcomb in Canada.\nI have played the flute for 15 years and am currently teaching myself to play the saxophone for a new challenge, and I enjoy software development due to the mix of problem solving and creativity required, which I find very engaging.`,
         basicSection: true
     },
     {
@@ -64,19 +64,12 @@ const projectContent = [
 
 const upcomingProjects = [
     {
-        projectId: 'goo001',
-        projectName: 'Google Sheets',
-        projectImage: 'https://cdn1.vectorstock.com/i/1000x1000/84/80/people-silhouette-icon-or-anonymous-person-vector-45238480.jpg',
+        projectId: 'ros001',
+        projectName: 'Roster Scripting',
+        projectImage: '/google-sheets-photo.png',
         projectOverview: `Having completed other personal projects, I was able to identify an opportunity to apply programming skills in the workplace, so I am currently working to automate manual processes in my current role as a Manager. I am writing JavaScript functions in Google Sheets that take in weekly roster data and processes this data to automate several tasks that were previously completed manually, allowing managers to spend time focusing on more productive work. It has been very rewarding identifying and implementing a programming solution in a professional environment, which felt like a step up from the volume control project which I was brought into.`,
-        projectLink: ''
+        projectLink: 'https://docs.google.com/spreadsheets/d/1j8VK6vnDJ4QuzgJRPoZEBUOsTEJEXYZu81jCM2laSco/edit?gid=128938579#gid=128938579'
     }
-    // {
-    //     projectId: '',
-    //     projectName: '',
-    //     projectImage: '',
-    //     projectOverview: '',
-    //     projectLink: ''
-    // },
     // {
     //     projectId: '',
     //     projectName: '',
