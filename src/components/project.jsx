@@ -16,10 +16,10 @@ export default function Project ({ project, onClick }) {
                         src={project.projectImage}
                         alt="Project Photo"
                     />
-                    <div id="project-buttons">
+                    <div className="project-buttons">
                         <button onClick={handleClick} id={`button-${project.projectId}`}>Toggle Project Overview</button>
                         {
-                            project.projectLink !== "" && <button><a href={project.projectLink} target="blank">Visit Project</a></button>
+                            project.projectLink !== "" && <button className="project-visit-button"><a href={project.projectLink} target="blank" className="project-visit-link">Visit Project</a></button>
                         }
                     </div>
                 </div>

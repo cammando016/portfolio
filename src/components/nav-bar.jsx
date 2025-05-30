@@ -11,7 +11,7 @@ export default function Navbar () {
             <nav id="navbar-links">
                 {
                     portfolioContent.map(section => {
-                        return <a href={`#section-${formatId(section.sectionName)}`} key={section.sectionId}>{section.sectionName}</a>
+                        return <a className="navbar-link" id={`${formatId(section.sectionName)}-link`} href={`#section-${formatId(section.sectionName)}`} key={section.sectionId}>{section.sectionName}</a>
                     })
                 }
             </nav>

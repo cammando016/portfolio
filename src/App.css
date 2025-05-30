@@ -9,7 +9,24 @@ body {
 main {
     display: flex;
     padding: 15px;
-    height: 80vh;
+    height: 84vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 5px;
+    margin: 5px;
+    margin-left: 0;
+    border-radius: 5px;
+    border-color: rgb(246,217,87);
+}
+
+button:hover {
+    background-color: rgb(246,217,87);
+    cursor: pointer;
 }
 
 /* Navbar Styling */
@@ -35,6 +52,11 @@ main {
 
 #navbar-links > a {
     padding: 10px;
+    color: white;
+}
+
+.navbar-link:hover {
+    color: rgb(246,217,87);
 }
 
 .page-heading-accent {
@@ -45,23 +67,34 @@ main {
 #contact-me {
     padding-top: 10px;
     width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #personal-photo {
     height: 50vh;
+    width: 50vh;
     border-radius: 50%;
 }
 
 .social-link {
     height: 75px;
     width: auto;
+    padding: 10px;
+}
+
+#contact-download-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Main Content Styling */
 #main-content {
     width: 60vw;
     overflow: scroll;
-    height: 80vh;
+    height: 84vh;
 }
 
 .portfolio-section > h3 {
@@ -119,6 +152,11 @@ main {
     flex-grow: 1;
 }
 
+.project-buttons {
+    display: flex;
+    justify-content: center;
+}
+
 /* Skills Section Styling */
 #skill-carousel {
     display: flex;
@@ -163,4 +201,5 @@ main {
     border-left: 0;
     border-right: 0;
     border-top-color: rgb(246,217,87);
+    display: none;
 }
