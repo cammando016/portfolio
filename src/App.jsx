@@ -42,8 +42,8 @@ function App() {
                 <Project
                   key={project.projectId} 
                   project={project} 
-                  onClick={updateActiveOverview} 
-                  projectId={project.projectId}
+                  onClick={updateActiveOverview}
+                  activeProject={activeOverview} 
                 />
               );
             }))
@@ -57,6 +57,7 @@ function App() {
                 key={project.projectId}
                 project={project}
                 onClick={updateActiveOverview}
+                activeProject={activeOverview}
               />
             );
           }))

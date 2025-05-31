@@ -203,3 +203,85 @@ button:hover {
     border-top-color: rgb(246,217,87);
     display: none;
 }
+
+@media only screen and (min-width: 599px) {
+    .mobile-overview {
+        display: none;
+    }
+}
+
+/* Mobile screen size styling */
+@media only screen and (max-width: 600px) {  
+    /* Navbar styling */
+    #navbar {
+        flex-direction: column;
+        width: 98vw;
+    }
+    #navbar-links {
+        display: none;
+    }
+
+    /* Main content styling */
+
+    /* Person section */
+    main {
+        flex-direction: column;
+        width: 100vw;
+        height: 87vh;
+        padding: 0;
+    }
+    #contact-me {
+        width: 96vw;
+        padding: 2vw;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    #greeting {
+        width: 100%;
+    }
+    #greeting > h1 {
+        margin-top: 0;
+        text-align: center;
+    }
+    #personal-photo {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    /* Content section */
+    #main-content {
+        width: 96vw;
+        padding: 2vw;
+    }
+
+    /* Projects */
+    #section-projects > .portfolio-children, #section-upcoming-projects > .portfolio-children {
+        flex-direction: column;
+    }
+    .project-name {
+        margin-bottom: 0;
+        padding-bottom: 5px;
+    }
+    .project-buttons {
+        justify-content: flex-start;
+    }
+    .mobile-overview {  
+        border-style: solid;
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+        border-top-color: rgb(246,217,87);
+    }
+    .project-image-mobile {
+        width: 90vw;
+        height: auto;
+        padding-top: 5px;
+    }
+
+    .active-project {
+        border-bottom: none;
+    }
+    .project-image, #project-overviews, #upcoming-project-overviews {
+        display: none;
+    }
+}

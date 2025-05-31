@@ -43,7 +43,7 @@ const projectContent = [
         projectName: 'Resume',
         projectImage: '/resume-photo.png',
         projectOverview: `My first project after learning React was to create a web version of my resume. Completing this allowed me to practice breaking down content into reusable components and passing data between components. I also added a panel to generate a random sport gif based on a user's selected sport. I did this in order to practice collecting user input and customising page content based on this, and to collect external data which I had not previously attempted.`,
-        projectLink: '',
+        projectLink: 'https://c-anderson-resume.netlify.app/',
         projectLangImg: '/react-logo.png'
     },
     {
