@@ -41,7 +41,7 @@ button:hover {
     border-bottom-color: rgb(246,217,87);
 }
 
-#navbar-heading {
+#mobile-navbar {
     padding-left: 20px;
     flex-grow: 1;
 }
@@ -93,7 +93,6 @@ button:hover {
 /* Main Content Styling */
 #main-content {
     width: 60vw;
-    overflow: scroll;
     height: 84vh;
 }
 
@@ -205,8 +204,11 @@ button:hover {
 }
 
 @media only screen and (min-width: 599px) {
-    .mobile-overview {
+    .mobile-overview, #mobile-menu-icon {
         display: none;
+    }
+    #main-content {
+        overflow: scroll;
     }
 }
 
@@ -217,8 +219,39 @@ button:hover {
         flex-direction: column;
         width: 98vw;
     }
+    #mobile-navbar {
+        display: flex;
+        padding-left: 2vw;
+        justify-content: flex-start;
+        width: 96vw;
+    }
+    #navbar-heading {
+        text-align: center;
+        flex-grow: 1;
+    }
+    #mobile-menu-icon {
+        height: 9vh;
+        border-radius: 15%;
+    }
+    .hide-menu {
+        display: none !important;
+    }
     #navbar-links {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 98vw;
+        padding-left: 2vw;
+        z-index: 1;
+        background-color: rgb(27,31,36);
+    }
+    .navbar-link {
+        width: 50%;
+        border-style: solid;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom-color: rgb(246,217,87);
     }
 
     /* Main content styling */
@@ -227,8 +260,9 @@ button:hover {
     main {
         flex-direction: column;
         width: 100vw;
-        height: 87vh;
+        height: 85vh;
         padding: 0;
+        overflow: scroll;
     }
     #contact-me {
         width: 96vw;
