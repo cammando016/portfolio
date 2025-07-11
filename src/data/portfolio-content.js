@@ -75,11 +75,11 @@ const upcomingProjects = [
         projectLangImg: '/js-logo.png'
     },
     {
-        projectId: 'gym001',
-        projectName: 'Gym Tracker',
-        projectImage: '/gym-tracker.jpeg',
-        projectOverview: 'Now that I have become more confident coding in React, I have begun learning Next.js to take advantage of the additional functionality included. My first project using Next.js will be creating a gym progress tracking site, that I can customise for my personal preference on keeping tracking of sets and ongoing progress each time I go to the gym. My goal for this project, as my existing react projects have been single page sites, is that the gym tracker will be a multi-page website in React with Next.js, as well as connecting to and continually updating a database.',
-        projectLink: '',
+        projectId: 'cal001',
+        projectName: 'Group Calendar',
+        projectImage: '/calendar-photo.png',
+        projectOverview: 'My main project at the moment is my first attempt at a full stack site, creating a calendar app for myself and friends to organise group activities. Please note this is currently not hosted while I am working on the project, however the GitHub repo is linked below if you are interested in the current code progress.',
+        projectLink: 'https://github.com/cammando016/calendar',
         projectLangImg: '/nextjs-logo.png'
     }
 ]
