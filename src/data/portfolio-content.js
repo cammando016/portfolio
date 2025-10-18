@@ -39,6 +39,14 @@ const portfolioContent = [
 
 const projectContent = [
     {
+        projectId: 'cal001',
+        projectName: 'Mobile Phone Group Calendar',
+        projectImage: '/calendar-photo.png',
+        projectOverview: 'My most recent project was also my first attempt at full stack development, creating a mobile calendar site for myself and friends to organise group activities. This required learning how to build my backend API, and properly manage data between the front-end, backend and database, along with user account management.',
+        projectLink: 'https://calendar-1-xauw.onrender.com/',
+        projectLangImg: '/nextjs-logo.png'
+    },
+    {
         projectId: 'res001',
         projectName: 'Resume',
         projectImage: '/resume-photo.png',
@@ -74,14 +82,6 @@ const upcomingProjects = [
         projectLink: 'https://docs.google.com/spreadsheets/d/1j8VK6vnDJ4QuzgJRPoZEBUOsTEJEXYZu81jCM2laSco/edit?gid=128938579#gid=128938579',
         projectLangImg: '/js-logo.png'
     },
-    {
-        projectId: 'cal001',
-        projectName: 'Group Calendar',
-        projectImage: '/calendar-photo.png',
-        projectOverview: 'My main project at the moment is my first attempt at a full stack site, creating a calendar app for myself and friends to organise group activities. Please note this is currently not hosted while I am working on the project, however the GitHub repo is linked below if you are interested in the current code progress.',
-        projectLink: 'https://github.com/cammando016/calendar',
-        projectLangImg: '/nextjs-logo.png'
-    }
 ]
 
 const skillContent = [
